@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brain-subspace-paper"
+version = "0.1.0"
+description = "Implementation for multilingual shared-vs-specific fMRI encoding paper"
+requires-python = ">=3.10"
+dependencies = [
+  "boto3>=1.34",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pandas>=2.2",
+  "pyarrow>=15.0",
+  "scikit-learn>=1.4",
+  "statsmodels>=0.14",
+  "pyyaml>=6.0",
+  "nibabel>=5.2",
+  "nilearn>=0.10",
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "torch>=2.2",
+  "huggingface-hub>=0.26",
+  "transformers>=4.45",
+  "sentence-transformers>=3.0",
+  "praatio>=6.2",
+  "typer>=0.12",
+  "rich>=13.7",
+  "tqdm>=4.66",
+]
+
+[project.scripts]
+brain-subspace-paper = "brain_subspace_paper.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,7 @@
+robustness_condition,core_effect_sign_preserved?,note
+last_token_pooling,False,5/6 model-language cells stayed positive; failures: XLM-R/ZH (-0.001). Reference base was 6/6 positive.
+fir_4lag,True,6/6 model-language cells stayed positive. Reference base was 6/6 positive.
+no_acoustic_nuisance,True,6/6 model-language cells stayed positive. Reference base was 6/6 positive.
+no_pitch_nuisance,True,6/6 model-language cells stayed positive. Reference base was 6/6 positive.
+previous_2_sentence_context,True,6/6 model-language cells stayed positive. Reference base was 6/6 positive.
+voxelwise_within_roi_mean_z,False,"4/6 model-language cells stayed positive; failures: XLM-R/FR (-0.029), NLLB encoder/FR (-0.025). Reference base was 6/6 positive."

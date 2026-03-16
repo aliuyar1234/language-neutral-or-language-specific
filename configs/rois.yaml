@@ -1,0 +1,30 @@
+atlas:
+  source: nilearn_harvard_oxford_cort_maxprob_thr25_2mm
+  resample_to_bold_space: true
+  interpolation: nearest
+
+roi_families:
+  semantic:
+    - Left Middle Temporal Gyrus, posterior division
+    - Right Middle Temporal Gyrus, posterior division
+    - Left Angular Gyrus
+    - Right Angular Gyrus
+    - Left Temporal Pole
+    - Right Temporal Pole
+    - Left Inferior Frontal Gyrus, pars triangularis
+    - Right Inferior Frontal Gyrus, pars triangularis
+  auditory:
+    - Left Heschl's Gyrus
+    - Right Heschl's Gyrus
+    - Left Superior Temporal Gyrus, posterior division
+    - Right Superior Temporal Gyrus, posterior division
+    - Left Superior Temporal Gyrus, anterior division
+    - Right Superior Temporal Gyrus, anterior division
+  control:
+    - Left Precentral Gyrus
+    - Right Precentral Gyrus
+    - Left Occipital Pole
+    - Right Occipital Pole
+
+notes:
+  if_labels_differ: "Map to the nearest anatomically appropriate Harvard-Oxford labels and record the mapping in a manifest."

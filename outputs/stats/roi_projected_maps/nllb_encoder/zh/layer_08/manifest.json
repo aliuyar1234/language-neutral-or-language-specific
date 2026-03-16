@@ -1,0 +1,10 @@
+{
+  "analysis_type": "roi_projected_descriptive",
+  "model": "nllb_encoder",
+  "language": "zh",
+  "selected_layer": 8,
+  "layer_depth": 0.6666666666666666,
+  "source_stats_file": "outputs/stats/group_level_roi_results.parquet",
+  "source_atlas_file": "data/interim/roi/harvard_oxford_cortical_resampled_to_lppc_bold.nii.gz",
+  "note": "ROI means projected onto atlas parcels for descriptive visualization; not voxelwise encoding maps."
+}

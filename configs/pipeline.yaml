@@ -1,0 +1,58 @@
+alignment:
+  max_span_len_per_language: 2
+  pivot_language: en
+  dp_cost:
+    alpha_semantic: 1.0
+    beta_char_ratio: 0.25
+    gamma_punct: 0.10
+  qc_thresholds:
+    pairwise_cosine_low: 0.35
+    mean_pairwise_cosine_low: 0.40
+    max_local_cost_high: 1.25
+
+embedding:
+  epsilon: 1e-8
+  dtype_forward: bfloat16
+  dtype_save: float32
+  use_context_window: false
+  context_prev_sentence_spans: 2
+
+decomposition:
+  use_l2_normalization: true
+  orthogonalize_specific: true
+
+design_matrix:
+  fine_grid_hz: 10
+  tr_sec: 2.0
+  hrf: nilearn_glover
+  use_target_language_timeline: true
+  mismatched_shared_shuffles: 5
+
+nuisance:
+  include_run_intercepts: true
+  include_run_linear_trends: true
+  highpass_cutoff_sec: 128
+  include_rms: true
+  include_pitch: true
+  include_word_rate: true
+  include_sentence_onsets: true
+  include_picture_regressors_for_en_zh_run1: true
+  include_motion_if_available: true
+  recompute_raw_motion_for_main_paper_if_missing: false
+
+encoding:
+  cv: leave_one_run_out
+  pca_max_components: 128
+  pca_variance_threshold: 0.95
+  pca_solver: randomized
+  ridge_alpha_min_log10: -2
+  ridge_alpha_max_log10: 6
+  ridge_alpha_n_values: 15
+
+statistics:
+  confirmatory_mid_layer_min_depth: 0.33
+  confirmatory_mid_layer_max_depth: 0.83
+  permutation_n: 10000
+  bootstrap_n: 10000
+  use_fdr_for_secondary_tests: true
+  geometry_brain_correlation: spearman

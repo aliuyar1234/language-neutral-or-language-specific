@@ -1,0 +1,4 @@
+dataset,language,subjects,runs,duration,TR,preprocessed derivatives available?,annotations available?,free download?
+LPPC,en,31,9,93.87,2.0,True,True,True
+LPPC,fr,28,9,97.9,2.0,True,True,True
+LPPC,zh,35,9,99.23,2.0,True,True,True

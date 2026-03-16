@@ -1,0 +1,23 @@
+models:
+  core:
+    - name: xlmr
+      hf_id: FacebookAI/xlm-roberta-base
+      family: encoder
+      use_in_core_paper: true
+      extraction_mode: encoder_hidden_states
+      pooling: mean_non_special_current_span_tokens
+    - name: nllb_encoder
+      hf_id: facebook/nllb-200-distilled-600M
+      family: seq2seq_encoder
+      use_in_core_paper: true
+      extraction_mode: encoder_hidden_states_only
+      pooling: mean_non_special_current_span_tokens
+
+alignment_qc_model:
+  name: labse
+  hf_id: sentence-transformers/LaBSE
+  use_for_main_analysis: false
+  use_for_alignment_qc: true
+
+optional_models:
+  allowed_only_after_core_completion: true

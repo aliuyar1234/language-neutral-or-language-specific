@@ -1,0 +1,47 @@
+outputs:
+  required_figures:
+    - outputs/figures/fig01_pipeline.png
+    - outputs/figures/fig02_dataset_alignment_overview.png
+    - outputs/figures/fig03_text_geometry_by_layer.png
+    - outputs/figures/fig04_main_confirmatory_roi_families.png
+    - outputs/figures/fig05_roi_condition_comparison.png
+    - outputs/figures/fig06_layer_curves_key_rois.png
+    - outputs/figures/fig07_geometry_to_brain_coupling.png
+    - outputs/figures/fig08_whole_brain_maps.png
+  optional_figures:
+    - outputs/figures/fig09_robustness_summary.png
+    - outputs/figures/fig10_german_appendix.png
+  required_tables:
+    - outputs/tables/table01_dataset_summary.csv
+    - outputs/tables/table02_model_summary.csv
+    - outputs/tables/table03_main_confirmatory_stats.csv
+    - outputs/tables/table04_roi_condition_stats.csv
+    - outputs/tables/table05_robustness_summary.csv
+  required_logs:
+    - outputs/logs/progress_log.md
+    - outputs/logs/config_snapshot.yaml
+    - outputs/logs/pip_freeze.txt
+    - outputs/logs/git_commit.txt
+    - outputs/logs/spec_deviation_log.md
+    - outputs/logs/data_integrity_report.md
+    - outputs/logs/alignment_qc_report.md
+    - outputs/logs/model_extraction_report.md
+    - outputs/logs/encoding_qc_report.md
+  required_manuscript:
+    - outputs/manuscript/claim_evidence_map.md
+    - outputs/manuscript/figure_provenance.md
+    - outputs/manuscript/table_provenance.md
+  required_stats:
+    - outputs/stats/subject_level_roi_results.parquet
+    - outputs/stats/group_level_roi_results.parquet
+    - outputs/stats/confirmatory_effects.parquet
+    - outputs/stats/geometry_metrics.parquet
+    - outputs/stats/geometry_brain_coupling.parquet
+  required_voxelwise_artifacts:
+    root: outputs/stats/whole_brain
+    filenames:
+      - shared_mean_z.nii.gz
+      - specific_mean_z.nii.gz
+      - shared_minus_specific_mean_z.nii.gz
+      - brain_mask.nii.gz
+      - manifest.json

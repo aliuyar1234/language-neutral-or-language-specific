@@ -1,0 +1,102 @@
+# Python / environment
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+
+# Local-only project machinery
+/AGENTS.md
+/SELF_REVIEW_NOTES.md
+/prompt_pack/
+/repo_scaffold/
+/tasks/
+
+# Heavy local assets
+/models/
+/data/raw/
+/data/.gitkeep
+/data/interim/roi/
+/data/interim/embeddings/**
+!/data/interim/embeddings/
+!/data/interim/embeddings/embedding_manifest.parquet
+/data/processed/features/**
+!/data/processed/features/
+!/data/processed/features/feature_manifest.parquet
+
+# Internal / planning docs not meant for GitHub
+/docs/00_thesis_choice.md
+/docs/01_research_scope_and_claims.md
+/docs/08_paper_writing_spec.md
+/docs/09_risks_and_drift_guardrails.md
+/docs/11_implementation_workplan.md
+/docs/12_done_definition.md
+/docs/13_reference_seed.md
+/docs/14_current_status_and_session_runbook.md
+/docs/source_manifest.md
+
+# Paper templates / internal writing scaffolds
+/paper/*
+!/paper/final/
+!/paper/final/*.pdf
+/paper/manuscript_template.md
+/paper/figure_captions_template.md
+/paper/results_story_template.md
+/paper/claims_allowed_and_forbidden.md
+
+# Generated outputs: ignore by default, then selectively keep canonical paper artifacts
+/outputs/**
+!/outputs/figures/
+!/outputs/tables/
+!/outputs/stats/
+!/outputs/manuscript/
+
+# Canonical paper figures only
+/outputs/figures/*
+!/outputs/figures/fig01_pipeline.png
+!/outputs/figures/fig02_dataset_alignment_overview.png
+!/outputs/figures/fig03_text_geometry_by_layer.png
+!/outputs/figures/fig04_main_confirmatory_roi_families.png
+!/outputs/figures/fig05_roi_condition_comparison.png
+!/outputs/figures/fig06_layer_curves_key_rois.png
+!/outputs/figures/fig07_geometry_to_brain_coupling.png
+!/outputs/figures/fig08_whole_brain_maps.png
+!/outputs/figures/fig09_robustness_summary.png
+
+# Canonical paper tables only
+/outputs/tables/*
+!/outputs/tables/table01_dataset_summary.csv
+!/outputs/tables/table02_model_summary.csv
+!/outputs/tables/table03_main_confirmatory_stats.csv
+!/outputs/tables/table04_roi_condition_stats.csv
+!/outputs/tables/table05_robustness_summary.csv
+
+# Canonical stats only
+/outputs/stats/*
+!/outputs/stats/confirmatory_effects.parquet
+!/outputs/stats/subject_level_roi_results.parquet
+!/outputs/stats/group_level_roi_results.parquet
+!/outputs/stats/geometry_metrics.parquet
+!/outputs/stats/geometry_brain_coupling.parquet
+!/outputs/stats/geometry_brain_coupling_points.parquet
+!/outputs/stats/roi_condition_stats.parquet
+!/outputs/stats/roi_family_effect_panels.parquet
+!/outputs/stats/robustness_cell_results.parquet
+!/outputs/stats/robustness_summary.parquet
+!/outputs/stats/robustness_representative_layers.parquet
+!/outputs/stats/roi_projected_maps/
+!/outputs/stats/roi_projected_maps/**
+
+# Manuscript-facing provenance only
+/outputs/manuscript/*
+!/outputs/manuscript/claim_evidence_map.md
+!/outputs/manuscript/figure_provenance.md
+!/outputs/manuscript/table_provenance.md
