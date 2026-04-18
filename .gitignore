@@ -15,10 +15,24 @@ Thumbs.db
 
 # Local-only project machinery
 /AGENTS.md
+**/AGENTS.md
 /SELF_REVIEW_NOTES.md
 /prompt_pack/
 /repo_scaffold/
 /tasks/
+
+# Internal scaffolding -- not part of the public research release
+.codex/
+.tmp_gpt_pro_bundle/
+.tmp_zip_*/
+/_local/
+CODEX_*.md
+*_CODEX.md
+START_PROMPT_FOR_CODEX.md
+START_PROMPT*.md
+PROMPT_TO_CODEX.md
+GPT_PRO_*.md
+*gpt_pro*
 
 # Heavy local assets
 /models/

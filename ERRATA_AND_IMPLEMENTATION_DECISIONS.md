@@ -11,35 +11,27 @@ This file does not change the thesis, dataset, core models, or main hypotheses. 
 ### Final precedence
 Use this precedence order:
 
-1. `AGENTS.md` for operational behavior
-2. `SSOT.md` for thesis, scientific scope, and core formulas
-3. `ERRATA_AND_IMPLEMENTATION_DECISIONS.md` for resolved ambiguities and exact defaults
-4. `docs/*.md`
-5. `configs/*.yaml`
-6. `repo_scaffold/`
+1. `SSOT.md` for thesis, scientific scope, and core formulas
+2. `ERRATA_AND_IMPLEMENTATION_DECISIONS.md` for resolved ambiguities and exact defaults
+3. `docs/*.md`
+4. `configs/*.yaml`
 
 If a detailed doc conflicts with this file on a resolved ambiguity, this file wins. If this file appears to conflict with thesis-level content in `SSOT.md`, preserve `SSOT.md`.
 
 ### Final read order
 Read files in this order before implementation:
 
-1. `AGENTS.md`
-2. `README.md`
-3. `SSOT.md`
-4. `ERRATA_AND_IMPLEMENTATION_DECISIONS.md`
-5. `docs/02_datasets_and_downloads.md`
-6. `docs/03_models_and_extraction.md`
-7. `docs/04_alignment_algorithm.md`
-8. `docs/05_novel_method_and_formulas.md`
-9. `docs/06_encoding_and_statistics.md`
-10. `docs/07_figures_tables_and_outputs.md`
-11. `docs/10_data_contracts.md`
-12. `docs/11_implementation_workplan.md`
-13. `tasks/work_breakdown.yaml`
-14. `configs/*.yaml`
-15. `paper/manuscript_template.md`
-
-`repo_scaffold/` is non-authoritative and may be replaced.
+1. `README.md`
+2. `SSOT.md`
+3. `ERRATA_AND_IMPLEMENTATION_DECISIONS.md`
+4. `docs/02_datasets_and_downloads.md`
+5. `docs/03_models_and_extraction.md`
+6. `docs/04_alignment_algorithm.md`
+7. `docs/05_novel_method_and_formulas.md`
+8. `docs/06_encoding_and_statistics.md`
+9. `docs/07_figures_tables_and_outputs.md`
+10. `docs/10_data_contracts.md`
+11. `configs/*.yaml`
 
 ## 2. Final Decisions
 
