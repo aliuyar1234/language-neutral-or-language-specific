@@ -61,6 +61,8 @@ GPT_PRO_*.md
 /paper/*
 !/paper/final/
 !/paper/final/*.pdf
+!/paper/erratum/
+!/paper/erratum/erratum.tex
 /paper/manuscript_template.md
 /paper/figure_captions_template.md
 /paper/results_story_template.md
